@@ -15,7 +15,7 @@ wait
 echo installing Unzip
 sudo apt-get install unzip -y  >/dev/null 2>&1
 wait
-echo unzipping the bootstrap folders and files into the ~/.rupayacore directory, this will take 1 minute.
+echo unzipping the bootstrap folders and files into the ~/.rupayacore directory, this should only take 1 minute.
 wait
 sudo unzip rupx-bootstrap-160119.zip -d ~/.rupayacore/ >/dev/null 2>&1
 wait
