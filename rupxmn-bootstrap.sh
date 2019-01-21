@@ -2,7 +2,7 @@
 echo stopping the Rupaya daemon
 rupaya-cli stop
 wait
-echo deleting the old files and folders from the ~/.rupayacore directory
+echo deleting the old files and folders from the ~/.rupayacore directory, and saving the rupaya.conf file.
 sudo cp ~/.rupayacore/rupaya.conf .
 sudo rm -rf ~/.rupayacore
 sudo mkdir ~/.rupayacore
@@ -15,7 +15,7 @@ wait
 echo installing Unzip
 sudo apt-get install unzip -y  >/dev/null 2>&1
 wait
-echo unzipping the bootstrap folders and files into the ~/.rupayacore directory
+echo unzipping the bootstrap folders and files into the ~/.rupayacore directory, this will take 1 minute.
 wait
 sudo unzip rupx-bootstrap-160119.zip -d ~/.rupayacore/
 wait
