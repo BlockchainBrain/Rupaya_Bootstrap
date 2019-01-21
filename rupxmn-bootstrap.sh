@@ -24,5 +24,5 @@ sudo rm rupx-bootstrap-160119.zip
 wait
 echo Starting the Rupaya Daemon
 rupayad -daemon
-echo bootstrap installation complete!
+echo The bootstrap installation complete and the Rupaya daemon should be running!
 exit
