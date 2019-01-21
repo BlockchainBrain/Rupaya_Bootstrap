@@ -3,10 +3,10 @@ echo stopping the Rupaya daemon
 rupaya-cli stop
 wait
 echo deleting the old files and folders from the ~/.rupayacore directory
-cp ~/.rupayacore/rupaya.conf .
-rm -rf ~/.rupayacore
-mkdir ~/.rupayacore
-mv rupaya.conf ~/.rupayacore/.
+sudo cp ~/.rupayacore/rupaya.conf .
+sudo rm -rf ~/.rupayacore
+sudo mkdir ~/.rupayacore
+sudo mv rupaya.conf ~/.rupayacore/.
 wait
 echo downloading the new bootstrap folders and files, this will take 1-2 minutes.
 wget https://www.dropbox.com/s/hqmmf5wo6gpbq1b/rupx-bootstrap-160119.zip
