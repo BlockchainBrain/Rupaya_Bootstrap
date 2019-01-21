@@ -1,6 +1,6 @@
 #!/bin/bash
 echo stopping the Rupaya daemon
-rupaya-cli stop
+rupaya-cli stop  >/dev/null 2>&1
 sleep 10s
 echo Deleting the old files and folders from the ~/.rupayacore directory, and saving the rupaya.conf file.
 cp ~/.rupayacore/rupaya.conf .
