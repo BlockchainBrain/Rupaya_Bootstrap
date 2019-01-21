@@ -9,7 +9,7 @@ mkdir ~/.rupayacore
 mv rupaya.conf ~/.rupayacore/.
 wait
 echo downloading the new bootstrap folders and files
-wget https://www.dropbox.com/s/hqmmf5wo6gpbq1b/rupx-bootstrap-160119.zip
+wget https://www.dropbox.com/s/hqmmf5wo6gpbq1b/rupx-bootstrap-160119.zip >/dev/null 2>&1
 echo download complete
 wait
 echo installing Unzip
