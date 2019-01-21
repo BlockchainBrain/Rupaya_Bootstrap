@@ -31,4 +31,5 @@ wait
 echo Starting the Rupaya Daemon
 rupayad -daemon
 echo The bootstrap installation complete and the Rupaya daemon should be running!
+echo To confirm that the bootstrap worked, run the command: rupaya-cli getinfo
 exit
