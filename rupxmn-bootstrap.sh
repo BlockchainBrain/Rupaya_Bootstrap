@@ -8,7 +8,7 @@ sudo cp ~/.rupayacore/rupaya.conf .
 wait
 sudo rm -rf ~/.rupayacore
 wait
-sudo mkdir ~/.rupayacore
+sudo mkdir ~/.rupayacore/
 sudo mv rupaya.conf ~/.rupayacore/.
 wait
 echo downloading the new bootstrap folders and files, this will take 1-2 minutes.
