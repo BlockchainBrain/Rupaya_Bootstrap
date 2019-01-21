@@ -18,6 +18,7 @@ wait
 echo unzipping the bootstrap folders and files into the ~/.rupayacore directory
 sudo unzip rupx-bootstrap-160119.zip -d ~/.rupayacore/  >/dev/null 2>&1
 sudo chown -R rupxmn:rupxmn ~/.rupayacore/  >/dev/null 2>&1
+sudo rm rupx-bootstrap-160119.zip
 echo Starting the Rupaya Daemon
 rupayad -daemon
 echo bootstrap installation complete!
