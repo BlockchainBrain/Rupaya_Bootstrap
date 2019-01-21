@@ -16,9 +16,12 @@ echo installing Unzip
 sudo apt-get install unzip -y  >/dev/null 2>&1
 wait
 echo unzipping the bootstrap folders and files into the ~/.rupayacore directory
+wait
 sudo unzip rupx-bootstrap-160119.zip -d ~/.rupayacore/
+wait
 sudo chown -R rupxmn:rupxmn ~/.rupayacore/
 sudo rm rupx-bootstrap-160119.zip
+wait
 echo Starting the Rupaya Daemon
 rupayad -daemon
 echo bootstrap installation complete!
