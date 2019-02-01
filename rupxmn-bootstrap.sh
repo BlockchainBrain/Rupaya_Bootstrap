@@ -27,7 +27,8 @@ sudo unzip rupx-bootstrap-160119.zip -d ~/.rupayacore/
 wait
 echo Updating permissions && sleep 10
 sudo chown -R rupxmn:rupxmn ~/.rupayacore/
-rm rupx-bootstrap-160119.zip
+sudo rm rupx-bootstrap-160119.zip
+sudo rm rupxmn-bootstrap.sh
 echo Starting the Rupaya Daemon
 rupayad -daemon
 echo The bootstrap installation complete and the Rupaya daemon should be running!
