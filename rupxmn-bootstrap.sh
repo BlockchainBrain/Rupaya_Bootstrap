@@ -23,9 +23,9 @@ wait
 echo Unzipping the bootstrap folders and files into the ~/.rupayacore directory, this should only take 1 minute.
 echo If prompted, type A to replace the files.
 wait
-sudo unzip rupx-bootstrap-160119.zip -d ~/.rupayacore/ && sleep 10
+sudo unzip rupx-bootstrap-160119.zip -d ~/.rupayacore/
 wait
-echo Updating permissions
+echo Updating permissions && sleep 10
 sudo chown -R rupxmn:rupxmn ~/.rupayacore/
 rm rupx-bootstrap-160119.zip
 echo Starting the Rupaya Daemon
