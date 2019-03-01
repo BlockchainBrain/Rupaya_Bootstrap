@@ -22,8 +22,8 @@ echo If prompted, type A to replace the files.
 wait
 tar xf rupx-bootstrap.tar.gz -C ~/
 wait
-sudo rm rupx-bootstrap.tar.gz
-sudo rm root-bootstrap.sh
+#sudo rm rupx-bootstrap.tar.gz
+#sudo rm root-bootstrap.sh
 wait
 echo Starting the Rupaya Daemon
 rupayad -daemon
