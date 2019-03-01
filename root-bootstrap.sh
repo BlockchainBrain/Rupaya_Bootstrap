@@ -13,19 +13,16 @@ mv rupaya.conf ~/.rupayacore/.
 wait
 echo Downloading the new bootstrap folders and files, this will take 1-2 minutes.
 wait
-wget https://www.dropbox.com/s/hqmmf5wo6gpbq1b/rupx-bootstrap-160119.zip  >/dev/null 2>&1
+wget https://rupaya.ams3.cdn.digitaloceanspaces.com/bootstrap/rupx-bootstrap.tar.gz  >/dev/null 2>&1
 wait
 echo Download complete
 wait
-echo Installing Unzip
-apt-get install unzip -y  >/dev/null 2>&1
-wait
-echo Unzipping the bootstrap folders and files into the ~/.rupayacore directory, this should only take 1 minute.
+echo Extracting the bootstrap folders and files into the ~/.rupayacore directory, this should only take 1 minute.
 echo If prompted, type A to replace the files.
 wait
-unzip rupx-bootstrap-160119.zip -d ~/.rupayacore/
+tar xf rupx-bootstrap.tar.gz -C ~/
 wait
-sudo rm rupx-bootstrap-160119.zip
+sudo rm rupx-bootstrap.tar.gz
 sudo rm root-bootstrap.sh
 wait
 echo Starting the Rupaya Daemon
