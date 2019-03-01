@@ -22,11 +22,12 @@ echo If prompted, type A to replace the files.
 wait
 tar xf rupx-bootstrap.tar.gz -C ~/
 wait
-#sudo rm rupx-bootstrap.tar.gz
-#sudo rm root-bootstrap.sh
-wait
 echo Starting the Rupaya Daemon
 rupayad -daemon
 echo The bootstrap installation complete and the Rupaya daemon should be running!
 echo To confirm that the bootstrap worked, run the command: rupaya-cli getinfo
+wait
+sudo rm rupx-bootstrap.tar.gz
+sudo rm root-bootstrap.sh
+wait
 exit
