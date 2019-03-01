@@ -28,6 +28,6 @@ echo The bootstrap installation complete and the Rupaya daemon should be running
 echo To confirm that the bootstrap worked, run the command: rupaya-cli getinfo
 wait
 sudo rm rupx-bootstrap.tar.gz
-sudo rm root-bootstrap.sh
+sudo rm script-bootstrap.sh
 wait
 exit
